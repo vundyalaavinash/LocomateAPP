@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="sage">#d6d6d6</color>
+    <color name="locomate_theme_color">#226694</color>
+    <color name="grey"> #dbdbdb </color>
+    <color name="dark_grey"> #989898 </color>
+    <color name="white">#ffffff</color>
+
+</resources>

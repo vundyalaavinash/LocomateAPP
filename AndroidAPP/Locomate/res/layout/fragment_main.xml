@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/sliding_list_pane"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#fff"
+	android:orientation="vertical" >
+	<LinearLayout
+		android:id="@+id/focus_preventer"		
+		android:layout_width="0px"
+		android:layout_height="0px"
+		android:background="#fff"
+		android:focusable="true"
+		android:orientation="vertical"		
+		android:focusableInTouchMode="true" />
+	<RelativeLayout
+		android:id="@+id/search_block"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#f5f5f5"
+		android:descendantFocusability="beforeDescendants" >
+		
+	    <Button
+			android:id="@+id/search_click"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_gravity="center_vertical"		
+			android:drawableLeft="@drawable/ic_search"
+			android:background="@drawable/submit_shape"
+			android:layout_centerVertical="true"
+			android:padding="15dp"
+			android:layout_marginRight="15dp"
+			android:layout_marginLeft="15dp"
+			android:textColor="#ffffff"
+			android:textSize="12sp"
+			android:textStyle="bold" />	    
+		<LinearLayout
+			android:id="@+id/search_block_text"
+			android:layout_width="match_parent"
+			android:layout_centerVertical="true"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@id/search_click"
+			android:orientation="vertical"
+			android:descendantFocusability="beforeDescendants" >
+			<EditText
+				android:id="@+id/source_text"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_marginBottom="5dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginTop="15dp"
+				android:background="@drawable/edittext_selector"
+				android:focusableInTouchMode="true"
+				android:gravity="left|center_vertical"
+				android:hint="@string/source_text"
+				style="@style/hintText"
+				android:inputType="text"
+				android:textAlignment="gravity"
+				android:textSize="14sp" >
+			</EditText>		
+			<EditText
+				android:id="@+id/destination_text"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_marginBottom="15dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginTop="5dp"
+				android:background="@drawable/edittext_selector"
+				android:focusableInTouchMode="true"
+				android:gravity="left|center_vertical"
+				android:hint="@string/destination_text"
+				style="@style/hintText"
+				android:inputType="text"
+				android:textAlignment="gravity"
+				android:textSize="14sp" >
+			</EditText>
+		</LinearLayout>			
+	</RelativeLayout>
+	<ListView
+		android:id="@+id/list_view"
+		android:divider="#d6d6d6"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+	</ListView>
+</LinearLayout>

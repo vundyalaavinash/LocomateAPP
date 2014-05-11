@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.locomate.layout.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<FrameLayout
+		android:id="@+id/menu"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="left"/>
+	<RelativeLayout
+		android:id="@+id/main_activity"
+		android:layout_width="fill_parent"
+		android:layout_height="match_parent"
+		android:layout_alignParentTop="true"
+		android:background="#fff">
+		<RelativeLayout
+			android:id="@+id/head"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:gravity="top"
+			android:background="#297eb7">
+			<ImageButton
+				android:id="@+id/titlebutton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:background="@null"
+				android:layout_alignParentLeft="true"
+				android:contentDescription="@+string/menubar"
+				android:paddingRight="@dimen/menu"
+				android:src="@drawable/ic_menu_bars" />
+			
+			<TextView
+				android:id="@+id/textView1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:gravity="center"				
+				android:padding="@dimen/padding_top"
+				android:text="@string/app_name"				
+				android:textAppearance="?android:attr/textAppearanceLarge" />
+			<ImageButton
+				android:id="@+id/map"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:background="@null"				
+				android:layout_centerVertical="true"
+				android:contentDescription="@+string/menubar"
+				android:paddingRight="@dimen/padding_top"
+				android:src="@drawable/ic_map"
+				android:visibility="invisible" />
+		</RelativeLayout>
+		<FrameLayout
+			android:id="@+id/fragment_container"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/head" />
+	</RelativeLayout>       
+</com.locomate.layout.SlidingPaneLayout>
