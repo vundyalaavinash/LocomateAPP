@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="com.locomate.java.beans.RegistrationPO" />
+        <mapping class="com.locomate.java.beans.UploadFilePO" />
+        <mapping class="com.locomate.java.beans.PostRidePO" />
+        <mapping class="com.locomate.java.beans.RequestPO" />
+    </session-factory> 
+</hibernate-configuration>
+
+

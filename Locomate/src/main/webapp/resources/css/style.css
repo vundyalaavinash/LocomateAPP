@@ -1,0 +1,147 @@
+
+.login{width:500px;padding:15px;}
+.main{min-height:500px;}
+.page-center{margin-top:15%;text-align: center;}
+.align-center{text-align: center;}
+.gridster li{
+	list-style: none;
+	background-color: white;	
+	text-align: center;
+	vertical-align: middle;
+}
+.gridster .search{position:relative;margin: auto;}
+.gridster .glyphicon{font-size:32px;}
+.blackbg{background-color: #444444;}
+.frame{width:75%;}
+.blue{color:#3276b1;}
+.bluebg{background-color:#3276b1 !important; color:white;}
+.greenbg{background-color:#5cb85c !important; color:white;}
+.skybluebg{background-color:#5bc0de !important; color:white;}
+.spanwhite{font-size: 24px; color:black;}
+.glyphicon-search{background-image:url('../images/ic_fordon-web.png');}
+.isa_info, .isa_success, .warning, .error {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:6px 10px 5px 40px;
+    background-repeat: no-repeat;
+    background-position: 10px center;-moz-border-radius:.5em;
+	-webkit-border-radius:.5em;
+	border-radius:.5em;
+}
+.warning{
+	color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url(../images/warning.png ) ;
+}
+.error{
+	color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url(../images/error.png);
+}
+
+#mapdiv{width:100%;height:400px;}
+.placeauto input[type=text] {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.placeauto input[type=text]:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.placeauto input[type=text]::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.placeauto input[type=text]:-ms-input-placeholder {
+  color: #999;
+}
+.placeauto input[type=text]::-webkit-input-placeholder {
+  color: #999;
+}
+.placeauto input[type=text][disabled],
+.placeauto input[type=text][readonly],
+fieldset[disabled] .placeauto input[type=text] {
+  cursor: not-allowed;
+  background-color: #eee;
+  opacity: 1;
+}
+.fb-login-button{
+    background-image: url(/java/resources/images/active_404.png);
+    display:block;
+    height:46px;
+    width:202px;
+}
+.fb-login-button:hover{
+    background-image: url(/java/resources/images/pressed_404.png);
+    display:block;
+    height:46px;
+    width:202px;
+}
+.g-login-button{
+    background-image: url(/java/resources/images/Red-signin-Long-base-32dp.png);
+    display:block;
+    height:42px;
+    width:197px;
+}
+.g-login-button:hover{
+    background-image: url(/java/resources/images/Red-signin-Long-press-32dp.png);
+    display:block;
+    height:42px;
+    width:197px;
+}
+.center{
+	margin:auto;
+}
+.t-login-button{
+    background-image: url(/java/resources/images/sign-in-with-twitter-gray.png);
+    display:block;
+    height:28px;
+    width:158px;
+}
+.t-login-button:hover{
+    background-image: url(/java/resources/images/sign-in-with-twitter-gray.png);
+    display:block;
+    height:28px;
+    width:158px;
+}
+.imageContainer{
+	min-width:100px;
+	min-height:200px;	
+}
+.imageContainer input{
+	display: table-cell;
+	margin:auto;
+	vertical-align: middle;
+}
+.list{
+	width:100%;
+	height:100%;
+}
+.imagehundredPer{
+	width:100%;
+	height:100%;
+}
+.icheck-radio{
+	list-style: none;
+}
+.icheck-radio li{
+	padding:15px;
+}
+.icheck-radio li label{
+	padding-left:15px;
+}
